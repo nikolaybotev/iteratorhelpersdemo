@@ -6,8 +6,8 @@ const customIterator = {
 
 const withHelpers = Iterator.from(customIterator);
 
-console.log(typeof withHelpers.throw);
+console.log(typeof withHelpers.throw); // undefined
 
-const result = withHelpers.throw!("error");
+const result = withHelpers.throw!("error"); // TypeError: withHelpers.throw is not a function
 
-console.log(result); // { value: undefined, done: true }
+console.log(result); // never reached!
