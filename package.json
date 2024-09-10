@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "clean": "rm *.js *.d.ts",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0-dev.20240904"
+  }
+}
