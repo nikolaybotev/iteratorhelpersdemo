@@ -1,10 +1,10 @@
 const customIterator = {
-    next(value: any) {
+    next(value: number) {
         return { value: ["next argument is ", value] };
     }
 }
 
-const withHelpers = Iterator.from(customIterator);
+const withHelpers = Iterator.from(customIterator as Iterator<[string, number]>);
 
 const result = withHelpers.next(42);
 

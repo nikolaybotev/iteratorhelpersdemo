@@ -4,7 +4,7 @@ const customIterator = {
     }
 }
 
-const withHelpers = Iterator.from(customIterator); // this should work
+const withHelpers = Iterator.from(customIterator as Iterator<any>); // this should work
 
 const result = withHelpers.next(42);
 
